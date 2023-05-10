@@ -99,12 +99,18 @@ input, select, textarea {
 	}
 
 	body {
+        background: rgb(255,8,0);
+background: -moz-linear-gradient(180deg, rgba(255,8,0,1) 0%, rgba(128,23,168,1) 34%, rgba(57,94,149,1) 71%, rgba(58,150,109,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(255,8,0,1) 0%, rgba(128,23,168,1) 34%, rgba(57,94,149,1) 71%, rgba(58,150,109,1) 100%);
+background: linear-gradient(180deg, rgba(255,8,0,1) 0%, rgba(128,23,168,1) 34%, rgba(57,94,149,1) 71%, rgba(58,150,109,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0800",endColorstr="#3a966d",GradientType=1);/*
 		background-color: #935d8c;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-	}
+	
+*/}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -119,8 +125,8 @@ input, select, textarea {
 
 /* Type */
 
-	body {
-		background-color: #935d8c;
+	body {/*
+		background-color: #935d8c;*/
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -2814,7 +2820,7 @@ input, select, textarea {
 	}
 
 		.features li {
-			width: calc(33.33333% - 2em);
+			width: 100% /*calc(33.33333% - 2em);*/ 
 			margin-left: 2em;
 			margin-top: 3em;
 			padding: 0;
@@ -2831,7 +2837,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.features li {
-				width: calc(50% - 2em);
+				width: calc(60% - 2em);
 			}
 
 				.features li:nth-child(3) {
@@ -3701,17 +3707,24 @@ input, select, textarea {
 		}
 
 		#footer .copyright {
-			width: 100%;
-			margin: 2.5em 0 2em 0;
-			font-size: 0.8em;
-			text-align: center;
-		}
-
+                    width: 100%;
+                    margin: 2.5em 0 2em 0;
+                    font-size: 0.8em;
+					text-align: center;
+				}
+            
+		#footer .icons {
+                    width: 100%;
+                    margin: 2.5em 0 2em 0;
+                    font-size: 0.8em;
+					text-align: center;
+				}
 		@media screen and (max-width: 1280px) {
 
 			#footer {
 				padding: 4em 4em 2em 4em ;
 			}
+            
 
 		}
 
@@ -3731,7 +3744,19 @@ input, select, textarea {
 				}
 
 				#footer .copyright {
-					text-align: left;
+
+                    width: 100%;
+                    margin: 2.5em 0 2em 0;
+                    font-size: 0.8em;
+					text-align: center;
+				}
+            }
+            
+            #footer .icons {
+                    width: 100%;
+                    margin: 2.5em 0 2em 0;
+                    font-size: 0.8em;
+					text-align: center;
 				}
 
 		}
